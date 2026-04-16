@@ -4,15 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Theo Cheng — ML Engineer & Applied Scientist</title>
-  <meta name="description" content="Theo Cheng is an ML Engineer and Applied Scientist specializing in recommender systems, LLM pipelines, and cloud-native ML infrastructure. M.S. USC, former AI Intern at Inline Apps." />
-  <meta property="og:title" content="Theo Cheng — ML Engineer & Applied Scientist" />
+  <meta name="description" content="Theo Cheng is an ML Engineer specializing in recommender systems, LLM pipelines, and cloud-native ML infrastructure. M.S. USC Viterbi, based in Los Angeles." />
+  <meta property="og:title" content="Theo Cheng — ML Engineer" />
   <meta property="og:description" content="ML Engineer specializing in recommender systems, LLM pipelines, and cloud-native ML infrastructure." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://ychia112.github.io" />
 
   <!-- Fonts -->
   <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -20,12 +18,8 @@
   <!-- NAV -->
   <header class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo" aria-label="Theo Cheng home">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <rect width="32" height="32" rx="8" fill="var(--color-primary)"/>
-          <text x="7" y="23" font-family="'Cabinet Grotesk', sans-serif" font-size="18" font-weight="800" fill="white">TC</text>
-        </svg>
-        <span class="nav-name">Theo Cheng</span>
+      <a href="#" class="nav-logo" aria-label="Theo Cheng">
+        <span class="nav-wordmark">Theo Cheng</span>
       </a>
       <nav class="nav-links" role="navigation" aria-label="Main navigation">
         <a href="#about">About</a>
@@ -35,7 +29,7 @@
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
       <button class="nav-theme-toggle" data-theme-toggle aria-label="Switch to light mode">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
       <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -56,95 +50,84 @@
 
     <!-- HERO -->
     <section class="hero" id="hero">
-      <div class="hero-bg">
-        <div class="hero-grid"></div>
-        <div class="hero-glow glow-1"></div>
-        <div class="hero-glow glow-2"></div>
-      </div>
       <div class="container hero-content">
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          Available for full-time roles starting Summer 2026
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          Available for full-time roles · Summer 2026
         </div>
+        <p class="hero-eyebrow">ML Engineer &amp; Applied Scientist</p>
         <h1 class="hero-title">
-          <span class="hero-name">Theo Cheng</span>
-          <span class="hero-role">ML Engineer &amp;<br/>Applied Scientist</span>
+          Building ML systems<br/><em>that ship.</em>
         </h1>
         <p class="hero-desc">
-          Building production ML systems — from hybrid recommender engines and LLM pipelines to TPU-accelerated diffusion models. M.S. in Analytics at USC (GPA&nbsp;3.95), based in Los&nbsp;Angeles.
+          I work across the full machine learning lifecycle — from recommender systems and LLM pipelines to distributed training on accelerated hardware. Currently completing my M.S. at USC Viterbi, based in Los Angeles.
         </p>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary">View Projects</a>
           <a href="#contact" class="btn btn-ghost">Get in Touch</a>
         </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-num">3.95</span>
-            <span class="stat-label">GPA at USC</span>
+        <div class="hero-meta">
+          <div class="meta-item">
+            <span class="meta-val">4+</span>
+            <span class="meta-label">Years ML Experience</span>
           </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-num">4+</span>
-            <span class="stat-label">Years ML Experience</span>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-val">USC</span>
+            <span class="meta-label">M.S. Analytics, 2026</span>
           </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-num">TPU</span>
-            <span class="stat-label">Google TRC Awardee</span>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-val">GCP</span>
+            <span class="meta-label">Vertex AI · Cloud TPU</span>
           </div>
         </div>
-      </div>
-      <div class="hero-scroll-hint" aria-hidden="true">
-        <span>Scroll</span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section class="section about" id="about">
       <div class="container about-grid">
-        <div class="about-text">
-          <p class="section-label">About Me</p>
+        <div class="about-text reveal">
+          <p class="section-label">About</p>
           <h2 class="section-title">I build ML systems that ship to production</h2>
           <p>
-            I'm a Machine Learning Engineer with a background in electronics engineering and a passion for bridging the gap between research and production-ready AI. Currently completing my M.S. in Industrial &amp; System Engineering (Analytics) at <strong>USC Viterbi</strong>, where I focus on recommender systems, LLM pipelines, and generative AI on accelerated hardware.
+            I'm a Machine Learning Engineer with a background in electronics engineering and a focus on production-ready AI. Currently completing my M.S. in Industrial &amp; System Engineering (Analytics) at <strong>USC Viterbi</strong>, with coursework in data science, predictive analytics, and data management.
           </p>
           <p>
-            My work spans the full ML lifecycle — from data pipelines and feature engineering to model training, evaluation, and cloud deployment. I've productionized recommender systems at a restaurant tech startup in Taipei, conducted ML research at <strong>National Tsing Hua University</strong>, and am currently running diffusion model experiments on Google Cloud TPUs as part of the <strong>Google TRC Award</strong> program.
+            My work spans the full ML lifecycle — from data pipelines and feature engineering to model training, evaluation, and cloud deployment. I've productionized recommender systems at a restaurant tech startup in Taipei, conducted ML research at <strong>National Tsing Hua University</strong>, and have ongoing work running diffusion model experiments on Google Cloud TPUs.
           </p>
-          <div class="about-links">
-            <a href="http://linkedin.com/in/yuchiacheng" target="_blank" rel="noopener" class="about-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          <div class="about-socials">
+            <a href="http://linkedin.com/in/yuchiacheng" target="_blank" rel="noopener" class="social-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
               LinkedIn
             </a>
-            <a href="https://github.com/ychia112" target="_blank" rel="noopener" class="about-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <a href="https://github.com/ychia112" target="_blank" rel="noopener" class="social-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
               GitHub
             </a>
           </div>
         </div>
-        <div class="about-card">
-          <div class="about-edu">
-            <p class="about-card-label">Education</p>
-            <div class="edu-item">
-              <div class="edu-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-              </div>
-              <div>
-                <p class="edu-degree">M.S. Industrial &amp; System Engineering</p>
-                <p class="edu-school">University of Southern California</p>
-                <p class="edu-meta">2024 – 2026 · GPA 3.95 · Los Angeles, CA</p>
-              </div>
+        <div class="about-card reveal">
+          <p class="about-card-label">Education</p>
+          <div class="edu-item">
+            <div class="edu-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
             </div>
-            <div class="edu-item">
-              <div class="edu-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-              </div>
-              <div>
-                <p class="edu-degree">B.S. Engineering &amp; System Science</p>
-                <p class="edu-school">National Tsing Hua University</p>
-                <p class="edu-meta">2019 – 2023 · Hsinchu, Taiwan</p>
-              </div>
+            <div>
+              <p class="edu-degree">M.S. Industrial &amp; System Engineering</p>
+              <p class="edu-school">University of Southern California</p>
+              <p class="edu-meta">2024 – 2026 · Los Angeles, CA</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div>
+              <p class="edu-degree">B.S. Engineering &amp; System Science</p>
+              <p class="edu-school">National Tsing Hua University</p>
+              <p class="edu-meta">2019 – 2023 · Hsinchu, Taiwan</p>
             </div>
           </div>
         </div>
@@ -159,7 +142,10 @@
         <div class="timeline">
 
           <div class="timeline-item reveal">
-            <div class="timeline-marker"></div>
+            <div class="timeline-track">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
             <div class="timeline-card">
               <div class="timeline-header">
                 <div>
@@ -172,12 +158,12 @@
                 </div>
               </div>
               <ul class="timeline-bullets">
-                <li>Designed and productionized a <strong>hybrid recommender system</strong> using TensorFlow Recommenders — collaborative filtering + Gower-distance content similarity — deployed for end-user restaurant recommendations.</li>
-                <li>Built an <strong>LLM-powered attribute tagging pipeline</strong> with batching, prompt design, post-processing rules, and a voting mechanism with LLM self-rated confidence to improve label reliability.</li>
-                <li>Developed scalable <strong>ETL workflows</strong> and data preprocessing pipelines to support model training and inference at scale.</li>
+                <li>Designed and productionized a <strong>hybrid recommender system</strong> using TensorFlow Recommenders — collaborative filtering combined with Gower-distance content similarity — deployed to serve real users.</li>
+                <li>Built an <strong>LLM-powered attribute tagging pipeline</strong> with prompt design, batching, and a voting mechanism with self-rated confidence to improve label reliability across multiple data sources.</li>
+                <li>Developed scalable <strong>ETL workflows</strong> to support model training and inference pipelines at production scale.</li>
               </ul>
               <div class="timeline-tags">
-                <span class="tag">TensorFlow Recommenders</span>
+                <span class="tag">TF Recommenders</span>
                 <span class="tag">LLM Pipelines</span>
                 <span class="tag">ETL</span>
                 <span class="tag">Python</span>
@@ -187,12 +173,15 @@
           </div>
 
           <div class="timeline-item reveal">
-            <div class="timeline-marker"></div>
+            <div class="timeline-track">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
             <div class="timeline-card">
               <div class="timeline-header">
                 <div>
                   <h3 class="timeline-role">Machine Learning Research Assistant</h3>
-                  <p class="timeline-company">Data Analysis &amp; Interpretation Lab, NTHU</p>
+                  <p class="timeline-company">Data Analysis &amp; Interpretation Lab · NTHU</p>
                 </div>
                 <div class="timeline-meta">
                   <span class="timeline-date">Feb 2022 – Jul 2023</span>
@@ -200,8 +189,8 @@
                 </div>
               </div>
               <ul class="timeline-bullets">
-                <li>Developed an <strong>unsupervised learning pipeline</strong> for automated atomic arrangement identification in high-resolution microscopy images, reducing reliance on manual expert labeling.</li>
-                <li>Applied <strong>Fourier transforms + PCA + k-means clustering</strong> to separate distinct atomic structures and enable systematic discovery of structural patterns at scale.</li>
+                <li>Developed an <strong>unsupervised learning pipeline</strong> for automated atomic arrangement identification in high-resolution microscopy images, reducing dependence on manual expert labeling.</li>
+                <li>Applied <strong>Fourier transforms → PCA → k-means clustering</strong> to separate distinct atomic structures and enable systematic pattern discovery at scale.</li>
               </ul>
               <div class="timeline-tags">
                 <span class="tag">PyTorch</span>
@@ -224,96 +213,123 @@
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
 
+          <!-- FEATURED: Recommender System (Inline) -->
           <div class="project-card project-card--featured reveal">
             <div class="project-card-inner">
               <div class="project-top">
-                <div class="project-badge">Featured · In Progress</div>
-                <div class="project-award">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  Google TRC Award
-                </div>
-              </div>
-              <h3 class="project-title">PyTorch/XLA Diffusion on Google Cloud TPU</h3>
-              <p class="project-desc">
-                Developing a PyTorch/XLA inference pipeline for SDXL + ControlNet + IP-Adapter on Google Cloud TPU v4. Investigating XLA recompilation bottlenecks in multi-adapter diffusion architectures and benchmarking Apple MPS vs. Cloud TPU to characterize dynamic shape overhead in high-resolution latent diffusion pipelines.
-              </p>
-              <div class="project-tags">
-                <span class="tag tag--primary">PyTorch/XLA</span>
-                <span class="tag">Google Cloud TPU</span>
-                <span class="tag">SDXL</span>
-                <span class="tag">ControlNet</span>
-                <span class="tag">Distributed ML</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/ychia112/pytorch-tpu-diffusion" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repo (private)">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                  GitHub (Private)
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card reveal">
-            <div class="project-card-inner">
-              <div class="project-top">
-                <div class="project-context">USC · DSCI-560 Practicum</div>
-              </div>
-              <h3 class="project-title">Domain-Specific AI Group Chat System</h3>
-              <p class="project-desc">
-                End-to-end AI inventory system integrating LLMs with embedding-based semantic search for domain-specific information retrieval. Cross-platform (web + mobile) deployed with Flutter, backend services, and AI inference pipelines.
-              </p>
-              <div class="project-tags">
-                <span class="tag tag--primary">LLM</span>
-                <span class="tag">LangChain</span>
-                <span class="tag">Semantic Search</span>
-                <span class="tag">Flutter</span>
-                <span class="tag">RAG</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/ychia112/groupchat-frontend" target="_blank" rel="noopener" class="project-link">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card reveal">
-            <div class="project-card-inner">
-              <div class="project-top">
-                <div class="project-context">Inline Apps · Internship</div>
+                <span class="project-context">Inline Apps · Internship · 2025</span>
               </div>
               <h3 class="project-title">Hybrid Restaurant Recommender System</h3>
               <p class="project-desc">
-                Productionized recommender system combining collaborative filtering via TensorFlow Recommenders and Gower-distance content similarity. Deployed to serve real users, with scalable ETL pipelines and an LLM-powered attribute tagging layer for data enrichment.
+                Productionized recommender system combining collaborative filtering via TensorFlow Recommenders with Gower-distance content similarity. Deployed to serve similar-restaurant recommendations for real end users, alongside an LLM-powered attribute tagging pipeline that aggregates multiple data sources with a voting mechanism for improved label reliability.
               </p>
               <div class="project-tags">
-                <span class="tag tag--primary">TF Recommenders</span>
+                <span class="tag tag--accent">TF Recommenders</span>
                 <span class="tag">Collaborative Filtering</span>
-                <span class="tag">LLM</span>
+                <span class="tag">LLM Tagging</span>
                 <span class="tag">GCP</span>
                 <span class="tag">ETL</span>
+                <span class="tag">Python</span>
               </div>
               <div class="project-links">
                 <span class="project-link project-link--disabled">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                   Private / Proprietary
                 </span>
               </div>
             </div>
           </div>
 
+          <!-- GroceryAI Group Chat -->
           <div class="project-card reveal">
             <div class="project-card-inner">
               <div class="project-top">
-                <div class="project-context">USC · ISE-535 Data Mining</div>
+                <span class="project-context">USC · DSCI-560 Practicum · 2025</span>
+              </div>
+              <h3 class="project-title">GroceryAI — Domain-Specific AI Chat System</h3>
+              <p class="project-desc">
+                End-to-end AI system integrating LLMs with embedding-based semantic search for domain-specific grocery information retrieval and contextual reasoning. Cross-platform (web + mobile) deployed with Flutter, integrating backend services and AI inference pipelines.
+              </p>
+              <div class="project-tags">
+                <span class="tag tag--accent">LLM</span>
+                <span class="tag">RAG</span>
+                <span class="tag">Semantic Search</span>
+                <span class="tag">Flutter</span>
+                <span class="tag">LangChain</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Grocery-AI/GroceryAI" target="_blank" rel="noopener" class="project-link">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stress Level / Work-Life Balance App -->
+          <div class="project-card reveal">
+            <div class="project-card-inner">
+              <div class="project-top">
+                <span class="project-context">USC · ISE · 2025</span>
+                <span class="project-live"><span class="live-dot"></span>Live Demo</span>
+              </div>
+              <h3 class="project-title">Work-Life Balance Prediction App</h3>
+              <p class="project-desc">
+                End-to-end predictive modeling app for stress and work-life balance assessment. Trained regression and classification models on behavioral features, deployed as an interactive Streamlit web application with live inference.
+              </p>
+              <div class="project-tags">
+                <span class="tag tag--accent">Streamlit</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Classification</span>
+                <span class="tag">Regression</span>
+                <span class="tag">Python</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ychia112/Stress-Level-Prediction-App" target="_blank" rel="noopener" class="project-link">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAxt Social Media -->
+          <div class="project-card reveal">
+            <div class="project-card-inner">
+              <div class="project-top">
+                <span class="project-context">Personal · 2024</span>
+              </div>
+              <h3 class="project-title">TAxt — Social Media Mobile App</h3>
+              <p class="project-desc">
+                Cross-platform social media application built with Flutter/Dart. Responsible for full frontend design and implementation — UI/UX architecture, component system, and mobile interaction patterns for an engaging social experience.
+              </p>
+              <div class="project-tags">
+                <span class="tag tag--accent">Flutter</span>
+                <span class="tag">Dart</span>
+                <span class="tag">Mobile UI</span>
+                <span class="tag">Frontend Design</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ychia112/TAxt_SocialMedia" target="_blank" rel="noopener" class="project-link">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Airbnb -->
+          <div class="project-card reveal">
+            <div class="project-card-inner">
+              <div class="project-top">
+                <span class="project-context">USC · ISE-535 Data Mining · 2025</span>
               </div>
               <h3 class="project-title">Airbnb Pricing Pipeline &amp; Modeling</h3>
               <p class="project-desc">
-                Full-cycle data science project: EDA, feature engineering, predictive modeling, and statistical hypothesis testing (ANOVA, T-test) to validate pricing patterns across property types, seasons, and guest capacity.
+                Full-cycle data science project: EDA, feature engineering, and predictive modeling on Airbnb data. Designed statistical tests (ANOVA, T-test) to validate pricing patterns across property types, seasons, and guest capacity.
               </p>
               <div class="project-tags">
-                <span class="tag tag--primary">Python</span>
+                <span class="tag tag--accent">Python</span>
                 <span class="tag">ANOVA</span>
                 <span class="tag">Scikit-learn</span>
                 <span class="tag">Feature Engineering</span>
@@ -321,48 +337,51 @@
               </div>
               <div class="project-links">
                 <a href="https://github.com/ychia112/Airbnb-Data-Mining-Project" target="_blank" rel="noopener" class="project-link">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                   GitHub
                 </a>
               </div>
             </div>
           </div>
 
+          <!-- TPU Diffusion — toned down -->
           <div class="project-card reveal">
             <div class="project-card-inner">
               <div class="project-top">
-                <div class="project-context">USC · ISE-547</div>
+                <span class="project-context">USC ISE · Google TRC · 2026</span>
               </div>
-              <h3 class="project-title">SC Insight Copilot — Agentic AI System</h3>
+              <h3 class="project-title">PyTorch/XLA Diffusion on Cloud TPU</h3>
               <p class="project-desc">
-                Multi-agent AI system built for supply chain analysis and decision support. Integrates LLM-based reasoning with structured data querying for domain-specific insight generation.
+                Ongoing research project investigating PyTorch/XLA inference for SDXL + ControlNet + IP-Adapter on Google Cloud TPU. Focus on characterizing XLA recompilation bottlenecks and benchmarking TPU vs. Apple MPS for multi-adapter diffusion architectures.
               </p>
               <div class="project-tags">
-                <span class="tag tag--primary">LLM Agents</span>
-                <span class="tag">LangChain</span>
-                <span class="tag">Python</span>
-                <span class="tag">Supply Chain</span>
+                <span class="tag">PyTorch/XLA</span>
+                <span class="tag">Google Cloud TPU</span>
+                <span class="tag">SDXL</span>
+                <span class="tag">ControlNet</span>
+                <span class="tag">Diffusion Models</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/ychia112/ise547-sc-insight-copilot" target="_blank" rel="noopener" class="project-link">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                  GitHub (Private)
-                </a>
+                <span class="project-link project-link--disabled">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  In Progress
+                </span>
               </div>
             </div>
           </div>
 
+          <!-- Atomic Structure ML -->
           <div class="project-card reveal">
             <div class="project-card-inner">
               <div class="project-top">
-                <div class="project-context">ML Research · NTHU Lab</div>
+                <span class="project-context">NTHU Lab · Research · 2022–2023</span>
               </div>
-              <h3 class="project-title">Atomic Structure Identification (Microscopy ML)</h3>
+              <h3 class="project-title">Atomic Structure Identification (Microscopy)</h3>
               <p class="project-desc">
-                Unsupervised pipeline for automated atomic arrangement identification in high-resolution TEM microscopy images. Fourier transforms → PCA → k-means clustering to separate distinct atomic structures at scale.
+                Unsupervised ML pipeline for automated atomic arrangement identification in high-resolution TEM microscopy images. Fourier transforms → PCA → k-means clustering to separate atomic structures and enable systematic pattern discovery.
               </p>
               <div class="project-tags">
-                <span class="tag tag--primary">Unsupervised Learning</span>
+                <span class="tag">Unsupervised Learning</span>
                 <span class="tag">PCA</span>
                 <span class="tag">k-Means</span>
                 <span class="tag">MATLAB</span>
@@ -370,7 +389,7 @@
               </div>
               <div class="project-links">
                 <span class="project-link project-link--disabled">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                   Research / Private
                 </span>
               </div>
@@ -384,13 +403,10 @@
     <!-- SKILLS -->
     <section class="section skills" id="skills">
       <div class="container">
-        <p class="section-label">Technical Expertise</p>
-        <h2 class="section-title">Skills</h2>
+        <p class="section-label">Technical Skills</p>
+        <h2 class="section-title">Expertise</h2>
         <div class="skills-grid">
           <div class="skill-group reveal">
-            <div class="skill-group-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            </div>
             <h3 class="skill-group-title">ML &amp; AI</h3>
             <div class="skill-tags">
               <span class="skill-tag">PyTorch</span>
@@ -399,15 +415,13 @@
               <span class="skill-tag">TF Recommenders</span>
               <span class="skill-tag">LangChain</span>
               <span class="skill-tag">Recommender Systems</span>
-              <span class="skill-tag">LLM Fine-tuning</span>
-              <span class="skill-tag">SHAP / LIME</span>
+              <span class="skill-tag">RAG</span>
+              <span class="skill-tag">LLM Pipelines</span>
               <span class="skill-tag">Diffusion Models</span>
+              <span class="skill-tag">SHAP / LIME</span>
             </div>
           </div>
           <div class="skill-group reveal">
-            <div class="skill-group-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-            </div>
             <h3 class="skill-group-title">MLOps &amp; Cloud</h3>
             <div class="skill-tags">
               <span class="skill-tag">GCP (BigQuery, Vertex AI)</span>
@@ -417,12 +431,10 @@
               <span class="skill-tag">Experiment Tracking</span>
               <span class="skill-tag">Docker</span>
               <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">Streamlit</span>
             </div>
           </div>
           <div class="skill-group reveal">
-            <div class="skill-group-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            </div>
             <h3 class="skill-group-title">Programming</h3>
             <div class="skill-tags">
               <span class="skill-tag">Python</span>
@@ -434,9 +446,6 @@
             </div>
           </div>
           <div class="skill-group reveal">
-            <div class="skill-group-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            </div>
             <h3 class="skill-group-title">Data &amp; Analytics</h3>
             <div class="skill-tags">
               <span class="skill-tag">Feature Engineering</span>
@@ -453,20 +462,18 @@
 
     <!-- CONTACT -->
     <section class="section contact" id="contact">
-      <div class="container contact-inner">
-        <div class="contact-glow"></div>
+      <div class="container contact-inner reveal">
         <p class="section-label">Get in Touch</p>
-        <h2 class="contact-title">Let's Build Something Together</h2>
+        <h2 class="contact-title">Open to<br/>new roles.</h2>
         <p class="contact-desc">
-          I'm actively looking for full-time ML Engineer / Applied Scientist roles starting Summer 2026. Open to opportunities in AI research, recommender systems, LLM engineering, and MLOps.
+          Looking for full-time ML Engineer / Applied Scientist positions starting Summer 2026. Interested in roles involving recommender systems, LLM engineering, and production ML infrastructure.
         </p>
         <div class="contact-actions">
           <a href="mailto:yuchiacheng12@gmail.com" class="btn btn-primary btn-lg">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            Send Email
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            yuchiacheng12@gmail.com
           </a>
           <a href="http://linkedin.com/in/yuchiacheng" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
             LinkedIn
           </a>
         </div>
@@ -477,13 +484,13 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p class="footer-copy">© 2026 Theo Cheng · Los Angeles, CA</p>
+      <p class="footer-copy">© 2026 Theo Cheng</p>
       <div class="footer-links">
         <a href="https://github.com/ychia112" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
         </a>
         <a href="http://linkedin.com/in/yuchiacheng" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
       </div>
     </div>
