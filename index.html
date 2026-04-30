@@ -158,16 +158,17 @@
                 </div>
               </div>
               <ul class="timeline-bullets">
-                <li>Designed and productionized a <strong>hybrid recommender system</strong> using TensorFlow Recommenders — collaborative filtering combined with Gower-distance content similarity — deployed to serve real users.</li>
-                <li>Built an <strong>LLM-powered attribute tagging pipeline</strong> with prompt design, batching, and a voting mechanism with self-rated confidence to improve label reliability across multiple data sources.</li>
-                <li>Developed scalable <strong>ETL workflows</strong> to support model training and inference pipelines at production scale.</li>
+                <li><strong>Similar Restaurant Recommender (Production):</strong> Built and productionized a real-time recommendation system using Gower-distance similarity to address cold-start challenges, replacing rule-based filtering and scaling to <strong>10K+ restaurants</strong> with 2× attribute coverage.</li>
+                <li><strong>Personalized Hybrid Recommender:</strong> Developed a hybrid model (TF Recommenders + content-based ranking) with geo-aware re-ranking, improving <strong>Hit Rate@10 by 90%</strong> over baseline and achieving <strong>AUC 0.82</strong> across 15K+ validation pairs.</li>
+                <li><strong>LLM Attribute Tagging Pipeline:</strong> Built an LLM-powered pipeline with confidence-based auto-validation and multi-source aggregation, automating feature extraction for a 10K+ restaurant catalog and eliminating manual labeling bottlenecks.</li>
               </ul>
               <div class="timeline-tags">
                 <span class="tag">TF Recommenders</span>
-                <span class="tag">LLM Pipelines</span>
+                <span class="tag">LangChain</span>
                 <span class="tag">ETL</span>
                 <span class="tag">Python</span>
                 <span class="tag">GCP</span>
+                <span class="tag">A/B Testing</span>
               </div>
             </div>
           </div>
@@ -189,13 +190,14 @@
                 </div>
               </div>
               <ul class="timeline-bullets">
-                <li>Developed an <strong>unsupervised learning pipeline</strong> for automated atomic arrangement identification in high-resolution microscopy images, reducing dependence on manual expert labeling.</li>
-                <li>Applied <strong>Fourier transforms → PCA → k-means clustering</strong> to separate distinct atomic structures and enable systematic pattern discovery at scale.</li>
+                <li><strong>Atomic Structure Classification Pipeline:</strong> Built an unsupervised learning pipeline for atomic structure classification in high-resolution TEM images, processing <strong>500–700 atoms per image</strong> using FFT-based feature extraction, PCA, and k-means clustering.</li>
+                <li><strong>Scalable Materials Analysis:</strong> Enabled scalable analysis of <strong>50MB+ TEM images</strong> across multiple nanomaterials (Au, Co, Pd), eliminating manual atom-by-atom annotation.</li>
               </ul>
               <div class="timeline-tags">
-                <span class="tag">PyTorch</span>
+                <span class="tag">Python</span>
                 <span class="tag">MATLAB</span>
                 <span class="tag">Unsupervised Learning</span>
+                <span class="tag">FFT</span>
                 <span class="tag">PCA</span>
                 <span class="tag">k-Means</span>
               </div>
@@ -221,7 +223,7 @@
               </div>
               <h3 class="project-title">Hybrid Restaurant Recommender System</h3>
               <p class="project-desc">
-                Productionized recommender system combining collaborative filtering via TensorFlow Recommenders with Gower-distance content similarity. Deployed to serve similar-restaurant recommendations for real end users, alongside an LLM-powered attribute tagging pipeline that aggregates multiple data sources with a voting mechanism for improved label reliability.
+                Productionized recommender system scaling to 10K+ restaurants — Gower-distance similarity for cold-start, plus a hybrid TF Recommenders model with geo-aware re-ranking achieving <strong>Hit Rate@10 +90%</strong> and <strong>AUC 0.82</strong> across 15K+ validation pairs. Paired with an LLM attribute tagging pipeline with confidence-based auto-validation for automated feature extraction at scale.
               </p>
               <div class="project-tags">
                 <span class="tag tag--accent">TF Recommenders</span>
@@ -352,18 +354,18 @@
           <div class="project-card reveal">
             <div class="project-card-inner">
               <div class="project-top">
-                <span class="project-context">USC ISE · Google TRC · 2026</span>
+                <span class="project-context">USC ISE · Google TRC Award · 2026</span>
               </div>
-              <h3 class="project-title">PyTorch/XLA Diffusion on Cloud TPU</h3>
+              <h3 class="project-title">PyTorch/XLA Image Generation on Cloud TPU</h3>
               <p class="project-desc">
-                Ongoing research project investigating PyTorch/XLA inference for SDXL + ControlNet + IP-Adapter on Google Cloud TPU. Focus on characterizing XLA recompilation bottlenecks and benchmarking TPU vs. Apple MPS for multi-adapter diffusion architectures.
+                Benchmarked TPU v6e vs GPU L4 for diffusion model inference under a Google TRC Award, achieving <strong>40% lower latency</strong> and <strong>93.5% scaling efficiency</strong> across 8 TPU chips. Analyzed XLA compilation overhead and cost–latency trade-offs for production diffusion pipelines.
               </p>
               <div class="project-tags">
                 <span class="tag">PyTorch/XLA</span>
-                <span class="tag">Google Cloud TPU</span>
-                <span class="tag">SDXL</span>
-                <span class="tag">ControlNet</span>
+                <span class="tag">TPU v6e</span>
                 <span class="tag">Diffusion Models</span>
+                <span class="tag">Benchmarking</span>
+                <span class="tag">GCP</span>
               </div>
               <div class="project-links">
                 <span class="project-link project-link--disabled">
@@ -380,9 +382,9 @@
               <div class="project-top">
                 <span class="project-context">NTHU Lab · Research · 2022–2023</span>
               </div>
-              <h3 class="project-title">Atomic Structure Identification (Microscopy)</h3>
+              <h3 class="project-title">Atomic Structure Classification (TEM Microscopy)</h3>
               <p class="project-desc">
-                Unsupervised ML pipeline for automated atomic arrangement identification in high-resolution TEM microscopy images. Fourier transforms → PCA → k-means clustering to separate atomic structures and enable systematic pattern discovery.
+                Unsupervised ML pipeline processing 500–700 atoms per high-resolution TEM image using FFT-based feature extraction → PCA → k-means clustering. Enabled scalable analysis of 50MB+ images across multiple nanomaterials (Au, Co, Pd), eliminating manual atom-by-atom annotation.
               </p>
               <div class="project-tags">
                 <span class="tag">Unsupervised Learning</span>
@@ -418,7 +420,9 @@
               <span class="skill-tag">JAX</span>
               <span class="skill-tag">TF Recommenders</span>
               <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">LangGraph</span>
               <span class="skill-tag">Recommender Systems</span>
+              <span class="skill-tag">Embedding Models</span>
               <span class="skill-tag">RAG</span>
               <span class="skill-tag">LLM Pipelines</span>
               <span class="skill-tag">Diffusion Models</span>
@@ -428,13 +432,14 @@
           <div class="skill-group reveal">
             <h3 class="skill-group-title">MLOps &amp; Cloud</h3>
             <div class="skill-tags">
-              <span class="skill-tag">GCP (BigQuery, Vertex AI)</span>
-              <span class="skill-tag">Google Cloud TPU</span>
+              <span class="skill-tag">GCP (BigQuery, Vertex AI, Cloud Run)</span>
+              <span class="skill-tag">Cloud TPU v6e</span>
               <span class="skill-tag">PyTorch/XLA</span>
+              <span class="skill-tag">FastAPI</span>
               <span class="skill-tag">Data Pipelines &amp; ETL</span>
+              <span class="skill-tag">A/B Testing</span>
               <span class="skill-tag">Experiment Tracking</span>
               <span class="skill-tag">Docker</span>
-              <span class="skill-tag">GitHub Actions</span>
               <span class="skill-tag">Streamlit</span>
             </div>
           </div>
@@ -443,10 +448,10 @@
             <div class="skill-tags">
               <span class="skill-tag">Python</span>
               <span class="skill-tag">SQL</span>
+              <span class="skill-tag">FastAPI</span>
               <span class="skill-tag">C++</span>
               <span class="skill-tag">MATLAB</span>
               <span class="skill-tag">Dart / Flutter</span>
-              <span class="skill-tag">JavaScript</span>
             </div>
           </div>
           <div class="skill-group reveal">
