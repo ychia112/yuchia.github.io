@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ── TYPEWRITER EFFECT ───────────────────────────────────────
-  const roles = ['ML Engineer', 'Data Scientist', 'Applied Scientist'];
+  const roles = ['ML Engineer', 'Data Scientist'];
   const el    = document.getElementById('typewriter-text');
   const cursor = document.querySelector('.typewriter-cursor');
   if (el) {
