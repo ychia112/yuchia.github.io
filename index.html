@@ -3,11 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Theo Cheng — ML Engineer & Applied Scientist</title>
-  <meta name="description" content="Theo Cheng is an ML Engineer specializing in recommender systems, LLM pipelines, and cloud-native ML infrastructure. M.S. USC Viterbi, based in Los Angeles." />
-  <meta property="og:title" content="Theo Cheng — ML Engineer" />
-  <meta property="og:description" content="ML Engineer specializing in recommender systems, LLM pipelines, and cloud-native ML infrastructure." />
+  <title>Theo Cheng — ML Engineer & Data Scientist</title>
+  <meta name="description" content="Theo Cheng is an ML Engineer and Data Scientist specializing in recommender systems, LLM pipelines, and cloud-native ML infrastructure. M.S. USC Viterbi, based in Los Angeles." />
+
+  <!-- OG / Social Preview -->
+  <meta property="og:title" content="Theo Cheng — ML Engineer & Data Scientist" />
+  <meta property="og:description" content="ML Engineer specializing in recommender systems, LLM pipelines, and cloud-native ML infrastructure. USC M.S. Analytics 2026." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ychia112.github.io" />
+  <meta property="og:image" content="https://og-image.vercel.app/Theo%20Cheng%20%E2%80%94%20ML%20Engineer.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fvercel-triangle-white.svg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Theo Cheng — ML Engineer & Data Scientist" />
+  <meta name="twitter:description" content="ML Engineer specializing in recommender systems, LLM pipelines, and cloud-native ML infrastructure." />
+  <meta name="twitter:image" content="https://og-image.vercel.app/Theo%20Cheng%20%E2%80%94%20ML%20Engineer.png?theme=dark&md=1&fontSize=100px" />
 
   <!-- Fonts -->
   <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
@@ -19,6 +29,12 @@
   <header class="nav" id="nav">
     <div class="nav-inner">
       <a href="#" class="nav-logo" aria-label="Theo Cheng">
+        <svg class="nav-logo-mark" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <rect x="2" y="2" width="10" height="10" rx="2" fill="currentColor" opacity="0.9"/>
+          <rect x="16" y="2" width="10" height="10" rx="2" fill="currentColor" opacity="0.5"/>
+          <rect x="2" y="16" width="10" height="10" rx="2" fill="currentColor" opacity="0.5"/>
+          <rect x="16" y="16" width="10" height="10" rx="2" fill="var(--color-primary)"/>
+        </svg>
         <span class="nav-wordmark">Theo Cheng</span>
       </a>
       <nav class="nav-links" role="navigation" aria-label="Main navigation">
@@ -55,7 +71,12 @@
           <span class="status-dot"></span>
           Available for full-time roles · Summer 2026
         </div>
-        <p class="hero-eyebrow">ML Engineer &amp; Applied Scientist</p>
+
+        <!-- Typewriter role line -->
+        <p class="hero-eyebrow">
+          <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
+        </p>
+
         <h1 class="hero-title">
           Building ML systems<br/><em>that ship.</em>
         </h1>
@@ -66,20 +87,35 @@
           <a href="#projects" class="btn btn-primary">View Projects</a>
           <a href="#contact" class="btn btn-ghost">Get in Touch</a>
         </div>
-        <div class="hero-meta">
-          <div class="meta-item">
-            <span class="meta-val">4+</span>
-            <span class="meta-label">Years ML Experience</span>
+
+        <!-- Animated stat counters -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-val">
+              <span class="counter" data-target="90" data-suffix="%">0%</span>
+            </div>
+            <div class="stat-label">Hit Rate@10 Lift</div>
           </div>
-          <div class="meta-divider"></div>
-          <div class="meta-item">
-            <span class="meta-val">USC</span>
-            <span class="meta-label">M.S. Analytics, 2026</span>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-val">
+              <span class="counter" data-target="82" data-prefix="0." data-mode="decimal">0.00</span>
+            </div>
+            <div class="stat-label">Validation AUC</div>
           </div>
-          <div class="meta-divider"></div>
-          <div class="meta-item">
-            <span class="meta-val">GCP</span>
-            <span class="meta-label">Vertex AI · Cloud TPU</span>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-val">
+              <span class="counter" data-target="10" data-suffix="K+">0K+</span>
+            </div>
+            <div class="stat-label">Restaurants Served</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-val">
+              <span class="counter" data-target="4" data-suffix="+">0+</span>
+            </div>
+            <div class="stat-label">Years ML Experience</div>
           </div>
         </div>
       </div>
@@ -92,7 +128,7 @@
           <p class="section-label">About</p>
           <h2 class="section-title">I build ML systems that ship to production</h2>
           <p>
-            I'm a Machine Learning Engineer with a background in electronics engineering and a focus on production-ready AI. Currently completing my M.S. in Industrial &amp; System Engineering (Analytics) at <strong>USC Viterbi</strong>, with coursework in data science, predictive analytics, and data management.
+            I'm a Machine Learning Engineer with a background in engineering science and a focus on production-ready AI. Currently completing my M.S. in Industrial &amp; System Engineering (Analytics) at <strong>USC Viterbi</strong>, with coursework in data science, predictive analytics, and data management.
           </p>
           <p>
             My work spans the full ML lifecycle — from data pipelines and feature engineering to model training, evaluation, and cloud deployment. I've productionized recommender systems at a restaurant tech startup in Taipei, conducted ML research at <strong>National Tsing Hua University</strong>, and have ongoing work running diffusion model experiments on Google Cloud TPUs.
@@ -213,13 +249,24 @@
       <div class="container">
         <p class="section-label">Selected Work</p>
         <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
+
+        <!-- Filter bar -->
+        <div class="filter-bar" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ml">ML Systems</button>
+          <button class="filter-btn" data-filter="llm">LLM</button>
+          <button class="filter-btn" data-filter="data">Data Science</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
 
           <!-- FEATURED: Recommender System (Inline) -->
-          <div class="project-card project-card--featured reveal">
+          <div class="project-card project-card--featured reveal" data-category="ml llm">
             <div class="project-card-inner">
               <div class="project-top">
                 <span class="project-context">Inline Apps · Internship · 2025</span>
+                <span class="project-badge project-badge--featured">Featured</span>
               </div>
               <h3 class="project-title">Hybrid Restaurant Recommender System</h3>
               <p class="project-desc">
@@ -243,7 +290,7 @@
           </div>
 
           <!-- GroceryAI Group Chat -->
-          <div class="project-card reveal">
+          <div class="project-card reveal" data-category="llm">
             <div class="project-card-inner">
               <div class="project-top">
                 <span class="project-context">USC · DSCI-560 Practicum · 2025</span>
@@ -269,11 +316,11 @@
           </div>
 
           <!-- Stress Level / Work-Life Balance App -->
-          <div class="project-card reveal">
+          <div class="project-card reveal" data-category="ml data">
             <div class="project-card-inner">
               <div class="project-top">
                 <span class="project-context">NTHU · 2022</span>
-                <span class="project-live"><span class="live-dot"></span>Live Demo</span>
+                <span class="project-live"><span class="live-dot"></span>Live</span>
               </div>
               <h3 class="project-title">Work-Life Balance Prediction App</h3>
               <p class="project-desc">
@@ -300,7 +347,7 @@
           </div>
 
           <!-- TAxt Social Media -->
-          <div class="project-card reveal">
+          <div class="project-card reveal" data-category="fullstack">
             <div class="project-card-inner">
               <div class="project-top">
                 <span class="project-context">Google Developer Student Club · 2023</span>
@@ -325,7 +372,7 @@
           </div>
 
           <!-- Airbnb -->
-          <div class="project-card reveal">
+          <div class="project-card reveal" data-category="data">
             <div class="project-card-inner">
               <div class="project-top">
                 <span class="project-context">USC · ISE-535 Data Mining · 2025</span>
@@ -351,7 +398,7 @@
           </div>
 
           <!-- TPU Diffusion — toned down -->
-          <div class="project-card reveal">
+          <div class="project-card reveal" data-category="ml">
             <div class="project-card-inner">
               <div class="project-top">
                 <span class="project-context">USC ISE · Google TRC Award · 2026</span>
@@ -377,7 +424,7 @@
           </div>
 
           <!-- Atomic Structure ML -->
-          <div class="project-card reveal">
+          <div class="project-card reveal" data-category="ml data">
             <div class="project-card-inner">
               <div class="project-top">
                 <span class="project-context">NTHU Lab · Research · 2022–2023</span>
@@ -411,6 +458,56 @@
       <div class="container">
         <p class="section-label">Technical Skills</p>
         <h2 class="section-title">Expertise</h2>
+
+        <!-- Skill progress bars -->
+        <div class="skill-bars reveal">
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span class="skill-bar-name">Python / ML Frameworks</span>
+              <span class="skill-bar-pct">95%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="95"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span class="skill-bar-name">Recommender Systems & LLM Pipelines</span>
+              <span class="skill-bar-pct">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span class="skill-bar-name">GCP / Cloud MLOps</span>
+              <span class="skill-bar-pct">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span class="skill-bar-name">Data Science & Analytics</span>
+              <span class="skill-bar-pct">88%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="88"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span class="skill-bar-name">Mobile / Full-Stack (Flutter)</span>
+              <span class="skill-bar-pct">72%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="72"></div>
+            </div>
+          </div>
+        </div>
+
         <div class="skills-grid">
           <div class="skill-group reveal">
             <h3 class="skill-group-title">ML &amp; AI</h3>
@@ -475,7 +572,7 @@
         <p class="section-label">Get in Touch</p>
         <h2 class="contact-title">Open to<br/>new roles.</h2>
         <p class="contact-desc">
-          Looking for full-time ML Engineer / Applied Scientist positions starting Summer 2026. Interested in roles involving recommender systems, LLM engineering, and production ML infrastructure.
+          Looking for full-time ML Engineer / Data Scientist positions starting Summer 2026. Interested in roles involving recommender systems, LLM engineering, and production ML infrastructure.
         </p>
         <div class="contact-actions">
           <a href="mailto:yuchiacheng12@gmail.com" class="btn btn-primary btn-lg">
